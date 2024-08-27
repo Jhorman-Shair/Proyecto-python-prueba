@@ -5,9 +5,11 @@ from gestorAplicacion.servicios.enums import Edades
 from gestorAplicacion.sujetos.cliente import Tienda
 from datetime import date
 from datetime import datetime
+from copy import deepcopy
 class Producto:
     IVA = 0.19
     fecha_actual = date.today()
+
 
     def __init__(self, nombre, marca=None, precio=0.0, tamaño=None, edad_valida=None, id=None, 
                  categoria=None, descripcion="", fecha_perecer=None, pasillo=None, tienda=None):
