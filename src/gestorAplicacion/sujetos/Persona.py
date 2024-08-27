@@ -1,7 +1,7 @@
 from typing import List, Optional
-from servicios.Enums import Genero
-from servicios.Tienda import Tienda
-from servicios.Carrito import Carrito
+from servicios.enums import Genero
+from servicios.tienda import Tienda
+from servicios.carrito import Carrito
 
 class Persona:
     personas: List['Persona'] = []

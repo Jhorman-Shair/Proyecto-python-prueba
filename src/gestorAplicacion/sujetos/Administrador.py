@@ -1,16 +1,7 @@
 from typing import List
-from gestorAplicacion.servicios.Tienda import Tienda
-from gestorAplicacion.servicios.Enums import Genero
-
-class Persona:
-    personas = []
-
-    def __init__(self, nombre, id, edad, genero):
-        self.nombre = nombre
-        self.id = id
-        self.edad = edad
-        self.genero = genero
-        Persona.personas.append(self)
+from gestorAplicacion.servicios.tienda import Tienda
+from gestorAplicacion.servicios.enums import Genero
+from gestorAplicacion.sujetos.persona import Persona
 
 class Administrador(Persona):
     def __init__(self, nombre=None, id=None, edad=None, genero=None, dinero=0):

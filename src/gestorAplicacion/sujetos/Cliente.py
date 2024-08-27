@@ -1,8 +1,8 @@
 from typing import List
-from sujetos.Persona import Persona
-from servicios.Carrito import Carrito
-from servicios.Enums import Genero
-from servicios.Enums import Membresia
+from sujetos.persona import Persona
+from servicios.carrito import Carrito
+from servicios.enums import Genero
+from servicios.enums import Membresia
 
 class Cliente(Persona):
     def __init__(self, nombre, id, edad, genero, dinero=0, carrito=None):
